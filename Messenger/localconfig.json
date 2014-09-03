@@ -1,0 +1,7 @@
+{
+    "Data": {
+        "DefaultConnection": {
+            "Connectionstring": "Server=(localdb)\\v11.0;Database=Messenger;MultipleActiveResultSets=true"
+        }
+    }
+}

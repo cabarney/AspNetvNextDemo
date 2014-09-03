@@ -1,0 +1,15 @@
+﻿@model IEnumerable<Messenger.Models.Message>
+
+@{
+    Layout = "/Views/Shared/_Layout.cshtml";
+    ViewBag.Title = "Message Hub";
+}
+
+<h2>Message Hub</h2>
+
+<hr/>
+@foreach(var msg in Model.OrderBy(m=>m.DatePosted))
+{
+    <div class="well well-sm"><em>[@msg.DatePosted.ToString("g")]</em><strong>@msg.Name: </strong>@msg.Content</div>
+}
+@Html.ActionLink("Say Something", "Create", "Messages", null, new {@class="btn btn-primary"})
