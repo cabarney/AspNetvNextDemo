@@ -15,6 +15,7 @@
     "Microsoft.AspNet.RequestContainer": "1.0.0-*",
     "Kestrel": "1.0.0-*"
   },
+  "compilationOptions": { "languageVersion": "experimental" },
   "commands": {
     "web": "Microsoft.AspNet.Hosting --server Microsoft.AspNet.Server.WebListener --server.urls http://localhost:5001",
     "kestrel": "Microsoft.AspNet.Hosting --server Kestrel"
